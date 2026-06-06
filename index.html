@@ -501,11 +501,33 @@
     </footer>
 
     <script>
-        document.getElementById('tuitionInquiryForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('SUCCESS: Your admission parameters have been logged. Academic Head Ajay Kumar Maurya Sir will connect with you shortly.');
-            this.reset();
-        });
-    </script>
+        <script>
+    document.getElementById('tuitionInquiryForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const selectedClass = this.querySelector('select').value;
+        let pdfName = ''; 
+
+        if (selectedClass.includes('KG') || selectedClass.includes('UKG') || selectedClass.includes('Class 1')) {
+            pdfName = 'Class 1 & Pre-Primary Foundational Roadmap - ApexScholar.pdf';
+        } else if (selectedClass.includes('Class 2')) {
+            pdfName = 'Class 2 Curriculum Roadmap - ApexScholar.pdf';
+        } else if (selectedClass.includes('Class 3')) {
+            pdfName = 'Class 3 Intermediate Syllabus Sheet - ApexScholar.pdf';
+        } else if (selectedClass.includes('Class 4')) {
+            pdfName = 'Class 4 Academic Sheet - ApexScholar.pdf';
+        } else if (selectedClass.includes('Class 5')) {
+            pdfName = 'Class 5 Board Orientation Blueprint - ApexScholar.pdf';
+        }
+        
+        alert('SUCCESS: Your admission parameters have been logged. Academic Head Ajay Kumar Maurya Sir will connect with you shortly.');
+        
+        if (pdfName !== '') {
+            window.open(encodeURIComponent(pdfName), '_blank');
+        }
+        
+        this.reset();
+    });
+</script>
 </body>
 </html>
