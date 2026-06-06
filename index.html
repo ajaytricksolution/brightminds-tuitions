@@ -463,35 +463,52 @@
                 <h2>Secure Your Slot with Ajay Sir</h2>
                 <p>Fill out the primary parameters. Our administrative desk will call you back within 2 hours.</p>
             </div>
-            <form id="tuitionInquiryForm">
-                <div class="input-group">
-                    <label>Parent's Full Name</label>
-                    <input type="text" required placeholder="e.g. Ramesh Chandra">
-                </div>
-                <div class="input-group">
-                    <label>Active Contact Number</label>
-                    <input type="tel" required placeholder="10-Digit Mobile Number">
-                </div>
-                <div class="input-group">
-                    <label>Student's Current Class Bracket</label>
-                    <select>
-                        <option>KG (Kindergarten)</option>
-                        <option>UKG (Upper Kindergarten)</option>
-                        <option>Class 1</option>
-                        <option>Class 2</option>
-                        <option>Class 3</option>
-                        <option>Class 4</option>
-                        <option>Class 5</option>
-                    </select>
-                </div>
-                <div class="input-group">
-                    <label>Residential Location / Landmark</label>
-                    <input type="text" required placeholder="e.g. Aliganj / Gomti Nagar, Lucknow">
-                </div>
-                <button type="submit" class="submit-trigger">Register Allocation Request</button>
-            </form>
-        </div>
-    </section>
+            <form id="tuitionInquiryForm" action="https://formspree.io/f/xknpndpe" method="POST">
+                    <div class="input-group">
+                        <label>Parent's Full Name</label>
+                        <input type="text" name="Parent Name" required placeholder="e.g. Ramesh Chandra">
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Active Contact Number</label>
+                        <input type="tel" name="Contact Number" required placeholder="10-Digit Mobile Number">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Student's Current Class Bracket</label>
+                        <select name="Selected Class" required>
+                            <option value="">Select Class</option>
+                            <option value="KG">KG (Kindergarten)</option>
+                            <option value="UKG">UKG (Upper Kindergarten)</option>
+                            <option value="Class 1">Class 1</option>
+                            <option value="Class 2">Class 2</option>
+                            <option value="Class 3">Class 3</option>
+                            <option value="Class 4">Class 4</option>
+                            <option value="Class 5">Class 5</option>
+                        </select>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label>Preferred Sunday Demo Slot (Starts from 8:00 AM)</label>
+                        <select name="Sunday Demo Slot" required>
+                            <option value="">Select Sunday Time Slot</option>
+                            <option value="Sunday 08:00 AM">Sunday - 08:00 AM to 09:00 AM</option>
+                            <option value="Sunday 09:00 AM">Sunday - 09:00 AM to 10:00 AM</option>
+                            <option value="Sunday 10:00 AM">Sunday - 10:00 AM to 11:00 AM</option>
+                            <option value="Sunday 11:00 AM">Sunday - 11:00 AM to 12:00 PM</option>
+                            <option value="Sunday 04:00 PM">Sunday - 04:00 PM to 05:00 PM</option>
+                            <option value="Sunday 05:00 PM">Sunday - 05:00 PM to 06:00 PM</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Residential Location / Landmark</label>
+                        <input type="text" name="Location" required placeholder="e.g. Aliganj / Gomti Nagar, Lucknow">
+                    </div>
+                    <button type="submit" class="submit-trigger">Register & Download Syllabus</button>
+                </form>
+            </div>
+        </section>
 
     <footer>
         <div class="footer-wrap">
@@ -501,32 +518,32 @@
     </footer>
 
     <script>
-    document.getElementById('tuitionInquiryForm').addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const selectedClass = this.querySelector('select').value;
-        let pdfName = ''; 
+        document.getElementById('tuitionInquiryForm').addEventListener('submit', function(e) {
+            const selectedClass = this.querySelector('select[name="Selected Class"]').value;
+            let pdfName = ''; 
 
-        if (selectedClass.includes('KG') || selectedClass.includes('UKG') || selectedClass.includes('Class 1')) {
-            pdfName = 'Class 1 & Pre-Primary Foundational Roadmap - ApexScholar.pdf';
-        } else if (selectedClass.includes('Class 2')) {
-            pdfName = 'Class 2 Curriculum Roadmap - ApexScholar.pdf';
-        } else if (selectedClass.includes('Class 3')) {
-            pdfName = 'Class 3 Intermediate Syllabus Sheet - ApexScholar.pdf';
-        } else if (selectedClass.includes('Class 4')) {
-            pdfName = 'Class 4 Academic Sheet - ApexScholar.pdf';
-        } else if (selectedClass.includes('Class 5')) {
-            pdfName = 'Class 5 Board Orientation Blueprint - ApexScholar.pdf';
-        }
-        
-        alert('SUCCESS: Your admission parameters have been logged. Academic Head Ajay Kumar Maurya Sir will connect with you shortly.');
-        
-        if (pdfName !== '') {
-            window.open(encodeURIComponent(pdfName), '_blank');
-        }
-        
-        this.reset();
-    });
-</script>
-</body>
+            if (selectedClass.includes('KG') || selectedClass.includes('UKG') || selectedClass.includes('Class 1')) {
+                pdfName = 'Class 1 & Pre-Primary Foundational Roadmap - ApexScholar.pdf';
+            } else if (selectedClass.includes('Class 2')) {
+                pdfName = 'Class 2 Curriculum Roadmap - ApexScholar.pdf';
+            } else if (selectedClass.includes('Class 3')) {
+                pdfName = 'Class 3 Intermediate Syllabus Sheet - ApexScholar.pdf';
+            } else if (selectedClass.includes('Class 4')) {
+                pdfName = 'Class 4 Academic Sheet - ApexScholar.pdf';
+            } else if (selectedClass.includes('Class 5')) {
+                pdfName = 'Class 5 Board Orientation Blueprint - ApexScholar.pdf';
+            }
+            
+            alert('SUCCESS: Your Free Sunday Demo Slot & parameters have been logged. Academic Head Ajay Kumar Maurya Sir will connect with you shortly.');
+            
+            if (pdfName !== '') {
+                const downloadLink = document.createElement('a');
+                downloadLink.href = encodeURIComponent(pdfName);
+                downloadLink.download = pdfName;
+                document.body.appendChild(downloadLink);
+                downloadLink.click();
+                document.body.removeChild(downloadLink);
+            }
+        });
+    </script>
 </html>
