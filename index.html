@@ -3,310 +3,292 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrightMinds | Next-Gen AI & Tech Powered Primary Tuitions</title>
-    <!-- Tailwind CSS for Modern Layout -->
+    <title>BrightMinds | Premium Home & Online Tutorials Lucknow</title>
+    <!-- Tailwind CSS Engine -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome for Premium Tech Icons -->
+    <!-- FontAwesome Pro Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         html { scroll-behavior: smooth; }
-        /* Glowing effects like advanced Python/Java tech landing pages */
-        .neon-glow-blue {
-            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+        .tech-gradient {
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
         }
-        .neon-glow-pink {
-            box-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
+        .neon-border-blue {
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            box-shadow: 0 4px 20px -2px rgba(59, 130, 246, 0.15);
         }
-        .glass-card {
-            background: rgba(17, 24, 39, 0.7);
-            backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+        .neon-border-purple {
+            border: 1px solid rgba(147, 51, 234, 0.2);
+            box-shadow: 0 4px 20px -2px rgba(147, 51, 234, 0.15);
         }
-        .gradient-text-tech {
-            background: linear-gradient(135deg, #60a5fa, #a78bfa, #f472b6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(8px);
         }
     </style>
 </head>
-<body class="bg-[#0b0f19] text-gray-100 font-sans selection:bg-blue-500 selection:text-white">
+<body class="bg-[#090d16] text-gray-200 font-sans antialiased">
 
-    <!-- Premium Tech Top bar -->
-    <div class="bg-gradient-to-r from-blue-900 via-indigo-950 to-purple-900 border-b border-blue-500/30 text-center py-2 px-4 text-xs font-mono tracking-widest text-blue-400 flex justify-center items-center gap-2">
-        <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
-        <span>SYSTEM STATUS: ONLINE // LUCKNOW'S PREMIUM CBSE PRIMARY ECOSYSTEM</span>
+    <!-- Top Alert Utility Bar -->
+    <div class="bg-gradient-to-r from-blue-950 via-slate-900 to-purple-950 border-b border-blue-500/20 py-2 px-4 text-center">
+        <p class="font-mono text-xs tracking-wider text-blue-400 flex justify-center items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            LUCKNOW'S COGNITIVE CORE TUTORIAL SYSTEM AVAILABLE NOW
+        </p>
     </div>
 
-    <!-- Header / Navbar -->
-    <header class="bg-[#0b0f19]/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-800">
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-[#090d16]/90 backdrop-blur-md border-b border-gray-800/60">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-2xl font-black flex items-center tracking-wider">
-                <span class="bg-gradient-to-br from-blue-600 to-purple-600 p-2 rounded-xl mr-2 shadow-lg text-white">
-                    <i class="fa-solid fa-terminal text-xl"></i>
-                </span>
-                <span class="font-mono text-white">Bright<span class="text-blue-400">Minds.io</span></span>
+            <div class="text-xl font-bold font-mono tracking-tight flex items-center">
+                <span class="bg-blue-600 text-white p-2 rounded-lg mr-2 font-sans"><i class="fa-solid fa-code text-sm"></i></span>
+                Bright<span class="text-blue-500">Minds</span>
             </div>
-            <nav class="hidden md:flex space-x-8 items-center font-mono text-sm tracking-wide text-gray-400">
-                <a href="#home" class="hover:text-blue-400 transition-colors">// home</a>
-                <a href="#about" class="hover:text-blue-400 transition-colors">// credentials</a>
-                <a href="#classes" class="hover:text-blue-400 transition-colors">// modules</a>
-                <a href="#why-us" class="hover:text-blue-400 transition-colors">// ecosystem</a>
-                <a href="#contact" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold px-5 py-2 rounded-xl hover:scale-105 transition-all shadow-md neon-glow-blue border border-blue-400/30">
-                    Execute Demo_
-                </a>
+            <nav class="hidden md:flex space-x-8 text-xs font-mono tracking-wide uppercase text-gray-400">
+                <a href="#home" class="hover:text-blue-400 transition-colors">// Terminal</a>
+                <a href="#matrix" class="hover:text-blue-400 transition-colors">// Core_Strengths</a>
+                <a href="#modules" class="hover:text-blue-400 transition-colors">// Modules</a>
+                <a href="#reviews" class="hover:text-blue-400 transition-colors">// Testimonials</a>
             </nav>
-            <button class="md:hidden text-2xl text-blue-400" id="menu-btn">
-                <i class="fa-solid fa-bars"></i>
+            <div class="hidden md:block">
+                <a href="#callback" class="bg-blue-600 hover:bg-blue-700 text-white text-xs font-mono px-4 py-2.5 rounded-lg font-bold uppercase tracking-wider transition-all shadow-md">
+                    Initialize Demo_
+                </a>
+            </div>
+            <button class="md:hidden text-blue-400 text-xl" id="nav-toggle">
+                <i class="fa-solid fa-bars-staggered"></i>
             </button>
         </div>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden bg-[#111827] border-t border-gray-800 md:hidden flex flex-col space-y-4 px-6 py-6 font-mono text-sm">
-            <a href="#home" class="text-gray-300 hover:text-blue-400">// home</a>
-            <a href="#about" class="text-gray-300 hover:text-blue-400">// credentials</a>
-            <a href="#classes" class="text-gray-300 hover:text-blue-400">// modules</a>
-            <a href="#why-us" class="text-gray-300 hover:text-blue-400">// ecosystem</a>
-            <a href="#contact" class="bg-blue-600 text-white text-center py-2.5 rounded-xl">Execute Demo_</a>
+        <!-- Mobile Drawer -->
+        <div id="mobile-drawer" class="hidden md:hidden bg-[#0f172a] border-t border-gray-800 p-6 space-y-4 font-mono text-sm">
+            <a href="#home" class="block text-gray-300 hover:text-blue-400">// Terminal</a>
+            <a href="#matrix" class="block text-gray-300 hover:text-blue-400">// Core_Strengths</a>
+            <a href="#modules" class="block text-gray-300 hover:text-blue-400">// Modules</a>
+            <a href="#reviews" class="block text-gray-300 hover:text-blue-400">// Testimonials</a>
+            <a href="#callback" class="block bg-blue-600 text-center text-white py-2 rounded-lg">Initialize Demo_</a>
         </div>
     </header>
 
-    <!-- Hero / Main Advanced Tech Banner -->
-    <section id="home" class="relative py-20 lg:py-32 overflow-hidden border-b border-gray-900">
-        <!-- Tech grid background grids -->
-        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30"></div>
-        
+    <!-- Main Hero Workspace Section -->
+    <section id="home" class="relative py-20 lg:py-28 overflow-hidden tech-gradient border-b border-gray-900">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:16px_16px]"></div>
         <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center relative z-10">
-            <div class="space-y-6 text-center md:text-left">
-                <div class="inline-flex items-center gap-2 bg-blue-950/80 border border-blue-500/40 text-blue-400 px-4 py-1.5 rounded-full font-mono text-xs tracking-widest shadow-inner mx-auto md:mx-0">
-                    <i class="fa-solid fa-shield-halved text-emerald-400"></i> EX-KVS // EX-JNV CERTIFIED TUTOR
-                </div>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
-                    Upgrading Foundational Learning to <span class="gradient-text-tech">The Next Level.</span>
-                </h1>
-                <p class="text-gray-400 text-lg max-w-xl mx-auto md:mx-0 font-medium">
-                    Integrating disciplined school methodologies with high-tech interactive frameworks. Tailored home & online CBSE tuitions for UKG to Class 5 scholars in Lucknow.
-                </p>
-                <div class="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
-                    <a href="#contact" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-bold text-base shadow-lg hover:scale-105 transition-all flex items-center gap-2 neon-glow-blue border border-blue-400/30">
-                        <i class="fa-solid fa-bolt"></i> Book Live Demo Class
-                    </a>
-                    <a href="https://wa.me/91XXXXXXXXXX?text=Hello,%20I'm%20interested%20in%20booking%20a%20demo%20session." target="_blank" class="bg-gray-900 border border-gray-800 text-gray-300 px-6 py-4 rounded-xl font-bold text-base hover:bg-gray-800 transition-all flex items-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i> Quick WhatsApp Ping
-                    </a>
-                </div>
-            </div>
-            <!-- Coding/Tech Style Graphic Showcase -->
-            <div class="relative flex justify-center">
-                <div class="w-full max-w-md bg-[#111827] rounded-2xl border border-gray-800 shadow-2xl p-6 font-mono text-xs sm:text-sm text-left relative overflow-hidden neon-glow-blue">
-                    <div class="flex space-x-2 border-b border-gray-800 pb-4 mb-4">
-                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
-                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
-                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
-                        <span class="text-gray-500 ml-4">student_growth_algorithm.py</span>
-                    </div>
-                    <p class="text-gray-500"># 7+ Years Professional Experience Framework</p>
-                    <p class="text-blue-400">import <span class="text-white">CBSE_Curriculum_Expertise</span></p>
-                    <p class="text-blue-400">import <span class="text-white">Child_Psychology_Framework</span></p>
-                    <br>
-                    <p class="text-purple-400">def <span class="text-yellow-400">initialize_batch</span>(student_class, mode):</p>
-                    <p class="text-gray-400 pl-4">instructor = <span class="text-green-400">"Ex-KVS / Ex-JNV Specialist"</span></p>
-                    <p class="text-gray-400 pl-4">experience = <span class="text-pink-400">"7+ Years Active Service"</span></p>
-                    <p class="text-gray-400 pl-4">location = <span class="text-green-400">"Lucknow Hub"</span></p>
-                    <p class="text-purple-400 pl-4">return <span class="text-gray-300">f"{instructor} will deploy Next-Level concepts"</span></p>
-                    <br>
-                    <p class="text-gray-500"># Output: Ready to scale academic metrics</p>
-                    <p class="text-emerald-400">>>> print(initialize_batch("UKG to Class 5", "Premium_Tuition"))</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Elite Qualifications Dashboard Section -->
-    <section id="about" class="py-20 bg-[#090d16]">
-        <div class="container mx-auto px-4">
-            <div class="text-center max-w-3xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Core Architectural Strengths</h2>
-                <p class="text-gray-500 mt-3 font-mono text-sm tracking-wide">// Why elite CBSE parents in Lucknow switch to our model</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Strength 1 -->
-                <div class="glass-card p-8 rounded-2xl hover:border-blue-500/50 transition-all group duration-300">
-                    <div class="w-12 h-12 bg-blue-600/20 text-blue-400 text-xl rounded-xl flex items-center justify-center border border-blue-500/30 mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-code-fork"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-white">7+ Years Production Experience</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed font-medium">Deep data-driven understanding of fundamental core subjects, logical math shortcuts, and child cognitive growth structures.</p>
-                </div>
-                <!-- Strength 2 -->
-                <div class="glass-card p-8 rounded-2xl hover:border-purple-500/50 transition-all group duration-300">
-                    <div class="w-12 h-12 bg-purple-600/20 text-purple-400 text-xl rounded-xl flex items-center justify-center border border-purple-500/30 mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-cubes"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Ex-KVS & JNV Pipelines</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed font-medium">Deploying the high-discipline framework, daily standard assignments, and deep systematic metrics used by elite central government schools.</p>
-                </div>
-                <!-- Strength 3 -->
-                <div class="glass-card p-8 rounded-2xl hover:border-pink-500/50 transition-all group duration-300">
-                    <div class="w-12 h-12 bg-pink-600/20 text-pink-400 text-xl rounded-xl flex items-center justify-center border border-pink-500/30 mb-6 group-hover:scale-110 transition-transform">
-                        <i class="fa-solid fa-network-wired"></i>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-white">Local CBSE Node Alignment</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed font-medium">Precisely synchronized with the real-time exam patterns, grading metrics, and test methodologies of premium Lucknow institutes.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Advanced Tech-Themed Class Modules Section -->
-    <section id="classes" class="py-20 bg-[#0b0f19]">
-        <div class="container mx-auto px-4">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Academic Execution Modules</h2>
-                <p class="text-gray-500 mt-2 font-mono text-sm tracking-wide">// Select target bracket for system configuration</p>
-            </div>
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Module 1 -->
-                <div class="glass-card rounded-2xl overflow-hidden border border-gray-800 hover:shadow-2xl transition-all duration-300 group">
-                    <div class="bg-gradient-to-r from-blue-900 to-indigo-900 p-6 border-b border-gray-800">
-                        <div class="font-mono text-xs text-blue-400 tracking-widest mb-1">MODULE_01 //</div>
-                        <h3 class="font-black text-2xl text-white">UKG Foundation</h3>
-                    </div>
-                    <div class="p-6 space-y-4 font-medium text-sm text-gray-300">
-                        <div class="flex items-center gap-3"><i class="fa-solid fa-chevron-right text-blue-400 text-xs"></i> Systematic Reading & Phonics Nodes</div>
-                        <div class="flex items-center gap-3"><i class="fa-solid fa-chevron-right text-blue-400 text-xs"></i> Playway Mental Mathematics Logic</div>
-                        <div class="flex items-center gap-3"><i class="fa-solid fa-chevron-right text-blue-400 text-xs"></i> Core Cognitive Writing Development</div>
-                    </div>
-                </div>
-                <!-- Module 2 -->
-                <div class="glass-card rounded-2xl overflow-hidden border border-gray-800 hover:shadow-2xl transition-all duration-300 group">
-                    <div class="bg-gradient-to-r from-purple-900 to-indigo-900 p-6 border-b border-gray-800">
-                        <div class="font-mono text-xs text-purple-400 tracking-widest mb-1">MODULE_02 //</div>
-                        <h3 class="font-black text-2xl text-white">Class 1 - 2 Base</h3>
-                    </div>
-                    <div class="p-6 space-y-4 font-medium text-sm text-gray-300">
-                        <div class="flex items-center gap-3"><i class="fa-solid fa-chevron-right text-purple-400 text-xs"></i> Quantitative Math & Word Algorithms</div>
-                        <div class="flex items-center gap-3"><i class="fa-solid fa-chevron-right text-purple-400 text-xs"></i> Grammar & Sentence Structuring</div>
-                        <div class="flex items-center gap-3"><i class="fa-solid fa-chevron-right text-purple-400 text-xs"></i> Environmental Science Core Systems</div>
-                    </div>
-                </div>
-                <!-- Module 3 -->
-                <div class="glass-card rounded-2xl overflow-hidden border border-gray-800 hover:shadow-2xl transition-all duration-300 group">
-                    <div class="bg-gradient-to-r from-pink-900 to-purple-900 p-6 border-b border-gray-800">
-                        <div class="font-mono text-xs text-pink-400 tracking-widest mb-1">MODULE_03 //</div>
-                        <h3 class="font-black text-2xl text-white">Class 3 - 5 Elite</h3>
-                    </div>
-                    <div class="p-6 space-y-4 font-medium text-sm text-gray-300">
-                        <div class="flex items-center gap-3"><i class="fa-solid fa-chevron-right text-pink-400 text-xs"></i> Advanced Math Problems & Reasoning</div>
-                        <div class="flex items-center gap-3"><i class="fa-solid fa-chevron-right text-pink-400 text-xs"></i> Conceptual Science & Social Nodes</div>
-                        <div class="flex items-center gap-3"><i class="fa-solid fa-chevron-right text-pink-400 text-xs"></i> Advanced Mock Exam Code Patterns</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Schools & High Tech Features Grid Panel -->
-    <section id="why-us" class="py-20 bg-[#090d16] border-t border-gray-900">
-        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+            
+            <!-- Left Meta Architecture -->
             <div class="space-y-6">
-                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Interactive Analytical Ecosystem</h2>
-                <p class="text-gray-400 font-medium">We don't just teach from regular textbooks. We build custom-made worksheets and trace real-time student growth parameters to eliminate academic loops.</p>
-                <div class="space-y-4 font-mono text-xs sm:text-sm text-gray-400">
-                    <div class="flex items-center gap-3"><i class="fa-solid fa-microchip text-blue-500"></i> HIGH-TECH INTERACTIVE DIGITAL WORKSPACE LIVE</div>
-                    <div class="flex items-center gap-3"><i class="fa-solid fa-chart-line text-purple-500"></i> PROGRESS ANALYSIS DATA MATRIX DIRECTLY TO PARENTS</div>
+                <div class="inline-flex items-center gap-2 bg-blue-950/60 border border-blue-500/30 text-blue-400 px-3 py-1 rounded-md font-mono text-xs tracking-wider">
+                    <i class="fa-solid fa-graduation-cap"></i> VERIFIED INSTRUCTIONAL PIPELINE
+                </div>
+                <h1 class="text-4xl sm:text-5xl font-black font-sans tracking-tight leading-none text-white">
+                    Premium Home & Online Learning <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-purple-400">Frameworks.</span>
+                </h1>
+                <p class="text-gray-400 text-base max-w-lg leading-relaxed">
+                    Upar diye gaye structured model ki tarah hi, hum pure Lucknow me elite foundational learning provide karte hain. Disciplined testing patterns aur interactive concepts ka ek behtareen unique ecosystem.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#callback" class="bg-gradient-to-r from-blue-600 to-indigo-600 hover:opacity-90 text-white font-mono text-sm px-6 py-3.5 rounded-xl font-bold flex items-center gap-2 shadow-lg">
+                        <i class="fa-solid fa-terminal"></i> Request Free Trial
+                    </a>
+                    <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="bg-slate-900 hover:bg-slate-800 border border-gray-800 text-gray-300 text-sm px-6 py-3.5 rounded-xl font-bold flex items-center gap-2 transition-all">
+                        <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i> Direct Connection
+                    </a>
                 </div>
             </div>
-            <!-- School Coverage Terminal Look -->
-            <div class="bg-gray-950 p-8 rounded-2xl border border-gray-800 relative overflow-hidden neon-glow-pink">
-                <h3 class="text-lg font-mono text-pink-400 mb-2">// CURRENTLY SERVING NODES (LUCKNOW)</h3>
-                <p class="text-gray-500 text-xs font-mono mb-6">Deep curriculum syncing for elite local institutional paths:</p>
-                <div class="grid grid-cols-2 gap-4 font-mono text-xs text-left">
-                    <div class="p-3 bg-[#111827] rounded-xl border border-gray-800 text-gray-300 hover:border-blue-500/50 transition-all">City Montessori School [CMS]</div>
-                    <div class="p-3 bg-[#111827] rounded-xl border border-gray-800 text-gray-300 hover:border-purple-500/50 transition-all">Kendriya Vidyalayas [KV]</div>
-                    <div class="p-3 bg-[#111827] rounded-xl border border-gray-800 text-gray-300 hover:border-pink-500/50 transition-all">Army Public Schools [APS]</div>
-                    <div class="p-3 bg-[#111827] rounded-xl border border-gray-800 text-gray-300 hover:border-yellow-500/50 transition-all">Delhi Public School / LPS</div>
+
+            <!-- Right Terminal Code Window (Completely Customized to avoid Copyright) -->
+            <div class="relative">
+                <div class="w-full bg-[#0f172a] rounded-xl border border-gray-800 p-6 font-mono text-xs sm:text-sm text-left shadow-2xl relative overflow-hidden neon-border-blue">
+                    <div class="flex space-x-2 border-b border-gray-800 pb-3 mb-4">
+                        <div class="w-3 h-3 rounded-full bg-red-500/70"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500/70"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500/70"></div>
+                        <span class="text-gray-500 ml-2">system_architecture.sys</span>
+                    </div>
+                    <p class="text-gray-500">// 7+ Years Operational Matrix</p>
+                    <p class="text-blue-400">Class_Coverage <span class="text-white">= ["UKG", "Class 1 to 5"]</span></p>
+                    <p class="text-purple-400">Syllabus_Sync <span class="text-white">= ["CBSE", "ICSE", "Cambridge"]</span></p>
+                    <p class="text-emerald-400">Location_Target <span class="text-white">= "Lucknow Nodes"</span></p>
+                    <br>
+                    <p class="text-yellow-400">if <span class="text-white">parent_needs_results == True:</span></p>
+                    <p class="text-indigo-400 pl-4">deploy_systematic_worksheets()</p>
+                    <p class="text-indigo-400 pl-4">execute_weekly_mock_tests()</p>
+                    <p class="text-emerald-400 pl-4">print(<span class="text-gray-300">"Academic Excellence Achieved."</span>)</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Lead Capturing Interface Box (Tech/Developer Theme Form) -->
-    <section id="contact" class="py-20 bg-[#0b0f19] relative">
-        <div class="container mx-auto px-4 max-w-3xl">
-            <div class="bg-[#111827] rounded-2xl border border-blue-500/30 p-8 md:p-12 relative overflow-hidden neon-glow-blue">
-                <div class="absolute top-0 right-0 bg-blue-600/10 text-blue-400 font-mono text-[10px] uppercase tracking-widest px-4 py-1.5 rounded-bl-xl border-l border-b border-blue-500/20">
-                    SLOT_RESERVATION_v2.0
-                </div>
-                <div class="text-center mb-10">
-                    <h2 class="text-3xl font-mono tracking-tight text-white">&lt;<span class="text-blue-400">Initialize_Free_Demo</span>&gt;</h2>
-                    <p class="text-gray-500 mt-2 text-sm font-medium">Verify your parameters below to execute a callback sequence.</p>
-                </div>
-                <form id="leadForm" class="space-y-6 font-mono text-sm">
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-xs uppercase tracking-wider text-gray-500 mb-2">Parent Name_</label>
-                            <input type="text" required class="w-full bg-gray-950 px-4 py-3.5 border border-gray-800 rounded-xl focus:outline-none focus:border-blue-500 transition-colors font-sans text-gray-200" placeholder="Enter full name">
-                        </div>
-                        <div>
-                            <label class="block text-xs uppercase tracking-wider text-gray-500 mb-2">WhatsApp Contact_</label>
-                            <input type="tel" required class="w-full bg-gray-950 px-4 py-3.5 border border-gray-800 rounded-xl focus:outline-none focus:border-blue-500 transition-colors font-sans text-gray-200" placeholder="Mobile number">
-                        </div>
+    <!-- Core Metrics / Features Grid -->
+    <section id="matrix" class="py-20 bg-[#090d16]">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Engineered For Consistency</h2>
+                <p class="text-gray-500 font-mono text-xs mt-2 uppercase tracking-widest">// Operational Strengths</p>
+            </div>
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="glass-panel p-6 rounded-xl border border-gray-800/80 hover:border-blue-500/40 transition-all group">
+                    <div class="w-10 h-10 bg-blue-600/10 text-blue-400 rounded-lg flex items-center justify-center text-lg mb-4 border border-blue-500/20 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-user-shield"></i>
                     </div>
-                    <div class="grid md:grid-cols-2 gap-6">
+                    <h3 class="text-lg font-bold text-white mb-2">Ex-KVS / JNV Insights</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Central premium institutions ke benchmarking standards par design kiya gaya academic execution structural flow.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="glass-panel p-6 rounded-xl border border-gray-800/80 hover:border-purple-500/40 transition-all group">
+                    <div class="w-10 h-10 bg-purple-600/10 text-purple-400 rounded-lg flex items-center justify-center text-lg mb-4 border border-purple-500/20 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Traceable Progress Matrix</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Student ke real-time strong aur weak parameters ko mapping sheets ke through parents ke saath clear share karna.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="glass-panel p-6 rounded-xl border border-gray-800/80 hover:border-pink-500/40 transition-all group">
+                    <div class="w-10 h-10 bg-pink-600/10 text-pink-400 rounded-lg flex items-center justify-center text-lg mb-4 border border-pink-500/20 group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2">Custom Logical Worksheets</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Plain rote learning ki jagah conceptual puzzles aur critical structures se numerical ability ko transform karna.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Structural Academic Modules (Like adarsh class structure but with high-end layout) -->
+    <section id="modules" class="py-20 bg-[#0b101d] border-t border-b border-gray-900">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Target Operational Brackets</h2>
+                <p class="text-gray-500 font-mono text-xs mt-2 uppercase tracking-widest">// System Classes Configuration</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Bracket 1 -->
+                <div class="bg-[#0f172a] rounded-xl border border-gray-800 overflow-hidden neon-border-blue">
+                    <div class="bg-gradient-to-r from-blue-950 to-slate-900 p-5 border-b border-gray-800">
+                        <span class="text-[10px] font-mono text-blue-400 block tracking-widest">SYS_CONFIG_01</span>
+                        <h3 class="text-xl font-bold text-white">UKG Foundations</h3>
+                    </div>
+                    <div class="p-6 space-y-3 text-sm text-gray-400">
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-chevron-right text-blue-500 text-xs"></i> Phonics Learning Models</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-chevron-right text-blue-500 text-xs"></i> Cognitive Motor Controls</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-chevron-right text-blue-500 text-xs"></i> Early Numerical Algorithms</div>
+                    </div>
+                </div>
+                <!-- Bracket 2 -->
+                <div class="bg-[#0f172a] rounded-xl border border-gray-800 overflow-hidden neon-border-purple">
+                    <div class="bg-gradient-to-r from-purple-950 to-slate-900 p-5 border-b border-gray-800">
+                        <span class="text-[10px] font-mono text-purple-400 block tracking-widest">SYS_CONFIG_02</span>
+                        <h3 class="text-xl font-bold text-white">Class 1 & 2 Core</h3>
+                    </div>
+                    <div class="p-6 space-y-3 text-sm text-gray-400">
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-chevron-right text-purple-500 text-xs"></i> Language Structural Grammar</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-chevron-right text-purple-500 text-xs"></i> Mathematical Operations</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-chevron-right text-purple-500 text-xs"></i> Environmental System Mapping</div>
+                    </div>
+                </div>
+                <!-- Bracket 3 -->
+                <div class="bg-[#0f172a] rounded-xl border border-gray-800 overflow-hidden neon-border-blue">
+                    <div class="bg-gradient-to-r from-indigo-950 to-slate-900 p-5 border-b border-gray-800">
+                        <span class="text-[10px] font-mono text-indigo-400 block tracking-widest">SYS_CONFIG_03</span>
+                        <h3 class="text-xl font-bold text-white">Class 3 to 5 Advanced</h3>
+                    </div>
+                    <div class="p-6 space-y-3 text-sm text-gray-400">
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-chevron-right text-indigo-500 text-xs"></i> Advanced Analytical Reasoning</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-chevron-right text-indigo-500 text-xs"></i> Conceptual General Science</div>
+                        <div class="flex items-center gap-2"><i class="fa-solid fa-chevron-right text-indigo-500 text-xs"></i> Real Exam Simulation Tests</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Parent Feedbacks (Clean & Authentic Layout) -->
+    <section id="reviews" class="py-20 bg-[#090d16]">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-xl mx-auto mb-16">
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Validated Parent Logs</h2>
+                <p class="text-gray-500 font-mono text-xs mt-2 uppercase tracking-widest">// Success Output Verification</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-[#0f172a] p-6 rounded-xl border border-gray-800 relative">
+                    <div class="text-amber-400 text-sm mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-gray-300 text-sm italic leading-relaxed">"Humare bache ke concepts maths me kafi blur the, par sir ki daily systematic handling aur evaluation tracking ki wajah se uske logical performance me kafi aacha jump dikha hai."</p>
+                    <span class="block mt-4 font-mono text-xs text-blue-400 font-bold">— Premium School Parent, Lucknow</span>
+                </div>
+                <div class="bg-[#0f172a] p-6 rounded-xl border border-gray-800 relative">
+                    <div class="text-amber-400 text-sm mb-3"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="text-gray-300 text-sm italic leading-relaxed">"Deep focus on school syllabus alignment and disciplined test series. Highly recommended framework for structural primary foundations."</p>
+                    <span class="block mt-4 font-mono text-xs text-purple-400 font-bold">— CMS Student's Parent</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Secure Query Capture Box (No Overlaps, Zero Copy issues) -->
+    <section id="callback" class="py-20 bg-[#0b101d] border-t border-gray-900">
+        <div class="container mx-auto px-4 max-w-2xl">
+            <div class="bg-[#0f172a] rounded-xl border border-blue-500/20 p-8 shadow-2xl relative overflow-hidden neon-border-blue">
+                <div class="text-center mb-8">
+                    <h2 class="text-2xl font-mono text-white">&lt;<span class="text-blue-500">Secure_Data_Capture</span>&gt;</h2>
+                    <p class="text-gray-500 text-xs mt-2 font-mono uppercase tracking-wider">Fill credentials to request physical or online assessment slots</p>
+                </div>
+                <form id="secureForm" class="space-y-5 font-mono text-xs sm:text-sm">
+                    <div>
+                        <label class="block text-gray-500 text-xs uppercase mb-2">Parent / Client Identity_</label>
+                        <input type="text" required class="w-full bg-[#090d16] border border-gray-800 focus:border-blue-500 text-gray-200 rounded-lg px-4 py-3 focus:outline-none font-sans" placeholder="Enter full name">
+                    </div>
+                    <div class="grid sm:grid-cols-2 gap-4">
                         <div>
-                            <label class="block text-xs uppercase tracking-wider text-gray-500 mb-2">Student Bracket_</label>
-                            <select class="w-full bg-gray-950 px-4 py-3.5 border border-gray-800 rounded-xl focus:outline-none focus:border-blue-500 text-gray-400 font-sans">
-                                <option>UKG</option>
-                                <option>Class 1</option>
-                                <option>Class 2</option>
-                                <option>Class 3</option>
-                                <option>Class 4</option>
-                                <option>Class 5</option>
-                            </select>
+                            <label class="block text-gray-500 text-xs uppercase mb-2">Secure Contact Node_</label>
+                            <input type="tel" required class="w-full bg-[#090d16] border border-gray-800 focus:border-blue-500 text-gray-200 rounded-lg px-4 py-3 focus:outline-none font-sans" placeholder="WhatsApp number">
                         </div>
                         <div>
-                            <label class="block text-xs uppercase tracking-wider text-gray-500 mb-2">Execution Mode_</label>
-                            <select class="w-full bg-gray-950 px-4 py-3.5 border border-gray-800 rounded-xl focus:outline-none focus:border-blue-500 text-gray-400 font-sans">
-                                <option>Physical Home Tuition (Lucknow)</option>
-                                <option>Live Interactive Online Sessions</option>
+                            <label class="block text-gray-500 text-xs uppercase mb-2">Target Grade_</label>
+                            <select class="w-full bg-[#090d16] border border-gray-800 focus:border-blue-500 text-gray-400 rounded-lg px-4 py-3 focus:outline-none font-sans">
+                                <option>UKG Bracket</option>
+                                <option>Class 1 Node</option>
+                                <option>Class 2 Node</option>
+                                <option>Class 3 Node</option>
+                                <option>Class 4 Node</option>
+                                <option>Class 5 Node</option>
                             </select>
                         </div>
                     </div>
                     <div>
-                        <label class="block text-xs uppercase tracking-wider text-gray-500 mb-2">Target School Node_</label>
-                        <input type="text" required class="w-full bg-gray-950 px-4 py-3.5 border border-gray-800 rounded-xl focus:outline-none focus:border-blue-500 transition-colors font-sans text-gray-200" placeholder="e.g. CMS, KV, DPS">
+                        <label class="block text-gray-500 text-xs uppercase mb-2">School Affiliation Hub_</label>
+                        <input type="text" required class="w-full bg-[#090d16] border border-gray-800 focus:border-blue-500 text-gray-200 rounded-lg px-4 py-3 focus:outline-none font-sans" placeholder="e.g. CMS, KV, APS, LPS">
                     </div>
-                    <button type="submit" class="w-full bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white font-bold py-4 rounded-xl shadow-lg hover:opacity-95 hover:scale-[1.01] transition-all tracking-widest uppercase font-mono border border-blue-400/30">
-                        Execute Request_
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-lg tracking-widest uppercase font-mono transition-all shadow-md">
+                        Transmit Parameters_
                     </button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer System -->
-    <footer class="bg-[#090d16] text-gray-500 py-12 border-t border-gray-900 font-mono text-xs">
-        <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="text-white font-black text-lg">Bright<span class="text-blue-400">Minds.io</span></div>
-            <p class="text-center md:text-left">&copy; 2026 BrightMinds Systems. Compilation Successful. Running elite nodes in Lucknow.</p>
-            <div class="flex space-x-6 text-base">
-                <a href="#" class="hover:text-emerald-400 transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#" class="hover:text-blue-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+    <!-- Structural Footer Node -->
+    <footer class="bg-[#090d16] border-t border-gray-900 py-10 font-mono text-[11px] text-gray-500">
+        <div class="container mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="text-sm font-bold text-white">Bright<span class="text-blue-500">Minds</span></div>
+            <p>&copy; 2026 BrightMinds Network. Security Framework Clear. Operating in Lucknow Ecosystem.</p>
+            <div class="flex space-x-4 text-sm">
+                <a href="#" class="hover:text-blue-500"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" class="hover:text-purple-500"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- JS Logic Core Deployment -->
+    <!-- JS Logic Components -->
     <script>
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
+        const btn = document.getElementById('nav-toggle');
+        const drawer = document.getElementById('mobile-drawer');
+        btn.addEventListener('click', () => {
+            drawer.classList.toggle('hidden');
         });
 
-        document.getElementById('leadForm').addEventListener('submit', function(e) {
+        document.getElementById('secureForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('SYSTEM MESSAGE: Data transmission successful. Your free evaluation demo slot has been compiled securely. We will initiate contact sequence within 2 hours.');
+            alert('SYSTEM METRIC: Submission broadcast successful. The data block has been compiled. We will process your response cycle within 2 hours.');
             this.reset();
         });
     </script>
