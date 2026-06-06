@@ -3,283 +3,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrightMinds Tuitions | Best CBSE Home Tutors Lucknow</title>
-    <!-- Tailwind CSS Script -->
+    <title>BrightMinds | Next-Gen AI & Tech Powered Primary Tuitions</title>
+    <!-- Tailwind CSS for Modern Layout -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome for Premium Icons -->
+    <!-- FontAwesome for Premium Tech Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         html { scroll-behavior: smooth; }
-        .bg-kids-pattern {
-            background-color: #f3f4f6;
-            background-image: radial-gradient(#3b82f6 1px, transparent 0), radial-gradient(#ec4899 1px, #f8fafc 0);
-            background-size: 40px 40px;
-            background-position: 0 0, 20px 20px;
-            background-opacity: 0.05;
+        /* Glowing effects like advanced Python/Java tech landing pages */
+        .neon-glow-blue {
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
         }
-        .gradient-text {
-            background: linear-gradient(to right, #1e3a8a, #3b82f6, #ec4899);
+        .neon-glow-pink {
+            box-shadow: 0 0 20px rgba(236, 72, 153, 0.5);
+        }
+        .glass-card {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .gradient-text-tech {
+            background: linear-gradient(135deg, #60a5fa, #a78bfa, #f472b6);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
     </style>
 </head>
-<body class="bg-kids-pattern text-gray-800 font-sans">
+<body class="bg-[#0b0f19] text-gray-100 font-sans selection:bg-blue-500 selection:text-white">
 
-    <!-- Top Announcement Bar -->
-    <div class="bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 text-white text-center py-2 px-4 font-bold text-sm shadow-sm flex justify-center items-center gap-2">
-        <span>🚀 Lucknow's Elite CBSE Home & Online Tuitions (UKG to Class 5)</span>
-        <span class="bg-white text-purple-700 px-2 py-0.5 rounded-full text-xs hidden sm:inline shadow-sm">Ex-KVS & Ex-JNV</span>
+    <!-- Premium Tech Top bar -->
+    <div class="bg-gradient-to-r from-blue-900 via-indigo-950 to-purple-900 border-b border-blue-500/30 text-center py-2 px-4 text-xs font-mono tracking-widest text-blue-400 flex justify-center items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+        <span>SYSTEM STATUS: ONLINE // LUCKNOW'S PREMIUM CBSE PRIMARY ECOSYSTEM</span>
     </div>
 
     <!-- Header / Navbar -->
-    <header class="bg-white/90 backdrop-blur-md shadow-md sticky top-0 z-50 border-b-2 border-yellow-300">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-            <div class="text-2xl font-black text-blue-600 flex items-center tracking-tight">
-                <span class="bg-gradient-to-r from-blue-500 to-pink-500 text-white p-2 rounded-xl mr-2 shadow-md">
-                    <i class="fa-solid fa-graduation-cap animate-bounce"></i>
+    <header class="bg-[#0b0f19]/80 backdrop-blur-md sticky top-0 z-50 border-b border-gray-800">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-black flex items-center tracking-wider">
+                <span class="bg-gradient-to-br from-blue-600 to-purple-600 p-2 rounded-xl mr-2 shadow-lg text-white">
+                    <i class="fa-solid fa-terminal text-xl"></i>
                 </span>
-                <span class="text-gray-900 font-extrabold">Bright<span class="text-pink-500">Minds</span></span>
+                <span class="font-mono text-white">Bright<span class="text-blue-400">Minds.io</span></span>
             </div>
-            <nav class="hidden md:flex space-x-6 items-center font-bold text-gray-600">
-                <a href="#home" class="hover:text-blue-600 transition-colors">Home</a>
-                <a href="#about" class="hover:text-blue-600 transition-colors">About Expert</a>
-                <a href="#classes" class="hover:text-blue-600 transition-colors">Batches</a>
-                <a href="#why-us" class="hover:text-blue-600 transition-colors">Speciality</a>
-                <a href="#faq" class="hover:text-blue-600 transition-colors">FAQs</a>
-                <a href="#contact" class="bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-5 py-2.5 rounded-full hover:scale-105 transition-all shadow-md flex items-center gap-2">
-                    <i class="fa-solid fa-rocket"></i> Book Free Demo
+            <nav class="hidden md:flex space-x-8 items-center font-mono text-sm tracking-wide text-gray-400">
+                <a href="#home" class="hover:text-blue-400 transition-colors">// home</a>
+                <a href="#about" class="hover:text-blue-400 transition-colors">// credentials</a>
+                <a href="#classes" class="hover:text-blue-400 transition-colors">// modules</a>
+                <a href="#why-us" class="hover:text-blue-400 transition-colors">// ecosystem</a>
+                <a href="#contact" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold px-5 py-2 rounded-xl hover:scale-105 transition-all shadow-md neon-glow-blue border border-blue-400/30">
+                    Execute Demo_
                 </a>
             </nav>
-            <button class="md:hidden text-2xl text-blue-600 focus:outline-none" id="menu-btn">
-                <i class="fa-solid fa-bars-staggered"></i>
+            <button class="md:hidden text-2xl text-blue-400" id="menu-btn">
+                <i class="fa-solid fa-bars"></i>
             </button>
         </div>
         <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden bg-white border-t border-gray-100 md:hidden flex flex-col space-y-3 px-4 py-4 font-bold shadow-lg">
-            <a href="#home" class="text-gray-700 hover:text-blue-600">Home</a>
-            <a href="#about" class="text-gray-700 hover:text-blue-600">About Expert</a>
-            <a href="#classes" class="text-gray-700 hover:text-blue-600">Batches</a>
-            <a href="#why-us" class="text-gray-700 hover:text-blue-600">Speciality</a>
-            <a href="#faq" class="text-gray-700 hover:text-blue-600">FAQs</a>
-            <a href="#contact" class="bg-blue-600 text-white text-center py-2.5 rounded-xl shadow-md">Book Free Demo</a>
+        <div id="mobile-menu" class="hidden bg-[#111827] border-t border-gray-800 md:hidden flex flex-col space-y-4 px-6 py-6 font-mono text-sm">
+            <a href="#home" class="text-gray-300 hover:text-blue-400">// home</a>
+            <a href="#about" class="text-gray-300 hover:text-blue-400">// credentials</a>
+            <a href="#classes" class="text-gray-300 hover:text-blue-400">// modules</a>
+            <a href="#why-us" class="text-gray-300 hover:text-blue-400">// ecosystem</a>
+            <a href="#contact" class="bg-blue-600 text-white text-center py-2.5 rounded-xl">Execute Demo_</a>
         </div>
     </header>
 
-    <!-- Hero Banner Section -->
-    <section id="home" class="relative overflow-hidden py-16 lg:py-24 bg-gradient-to-b from-blue-50 via-pink-50 to-white">
-        <div class="absolute top-10 left-10 text-yellow-400 opacity-20 animate-spin-slow hidden md:block text-5xl"><i class="fa-solid fa-shapes"></i></div>
-        <div class="absolute bottom-10 right-10 text-pink-400 opacity-20 animate-pulse hidden md:block text-5xl"><i class="fa-solid fa-cloud"></i></div>
+    <!-- Hero / Main Advanced Tech Banner -->
+    <section id="home" class="relative py-20 lg:py-32 overflow-hidden border-b border-gray-900">
+        <!-- Tech grid background grids -->
+        <div class="absolute inset-0 bg-[linear-gradient(to_right,#1f2937_1px,transparent_1px),linear-gradient(to_bottom,#1f2937_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-30"></div>
         
         <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center relative z-10">
             <div class="space-y-6 text-center md:text-left">
-                <div class="inline-flex items-center gap-2 bg-pink-100 border border-pink-200 text-pink-700 px-4 py-1.5 rounded-full text-xs font-black tracking-wider uppercase shadow-sm mx-auto md:mx-0">
-                    <i class="fa-solid fa-location-dot text-rose-500"></i> Lucknow's No.1 Primary Tutors
+                <div class="inline-flex items-center gap-2 bg-blue-950/80 border border-blue-500/40 text-blue-400 px-4 py-1.5 rounded-full font-mono text-xs tracking-widest shadow-inner mx-auto md:mx-0">
+                    <i class="fa-solid fa-shield-halved text-emerald-400"></i> EX-KVS // EX-JNV CERTIFIED TUTOR
                 </div>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 leading-tight">
-                    Conceptual Clarity For <span class="gradient-text">CBSE Little Scholars!</span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight">
+                    Upgrading Foundational Learning to <span class="gradient-text-tech">The Next Level.</span>
                 </h1>
-                <p class="text-gray-600 text-lg font-medium max-w-xl mx-auto md:mx-0">
-                    Give your child the academic edge with an <span class="text-blue-600 font-bold">Ex-KVS & Ex-JNV educator</span> holding 7+ years of elite teaching experience. Special customized tutoring from UKG to Class 5.
+                <p class="text-gray-400 text-lg max-w-xl mx-auto md:mx-0 font-medium">
+                    Integrating disciplined school methodologies with high-tech interactive frameworks. Tailored home & online CBSE tuitions for UKG to Class 5 scholars in Lucknow.
                 </p>
-                <div class="flex flex-wrap gap-4 justify-center md:justify-start pt-2">
-                    <a href="#contact" class="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-2xl font-extrabold text-lg shadow-xl hover:shadow-blue-200 hover:-translate-y-1 transition-all flex items-center gap-2">
-                        <i class="fa-solid fa-calendar-check"></i> Book A Free Demo Class
+                <div class="flex flex-wrap gap-4 justify-center md:justify-start pt-4">
+                    <a href="#contact" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-bold text-base shadow-lg hover:scale-105 transition-all flex items-center gap-2 neon-glow-blue border border-blue-400/30">
+                        <i class="fa-solid fa-bolt"></i> Book Live Demo Class
                     </a>
-                    <a href="https://wa.me/91XXXXXXXXXX?text=Hi,%20I%20want%20to%20know%20more%20about%20your%20home%20tuitions." target="_blank" class="bg-emerald-500 text-white px-6 py-4 rounded-2xl font-extrabold text-lg shadow-xl hover:shadow-emerald-200 hover:-translate-y-1 transition-all flex items-center gap-2">
-                        <i class="fa-brands fa-whatsapp text-xl"></i> Chat on WhatsApp
+                    <a href="https://wa.me/91XXXXXXXXXX?text=Hello,%20I'm%20interested%20in%20booking%20a%20demo%20session." target="_blank" class="bg-gray-900 border border-gray-800 text-gray-300 px-6 py-4 rounded-xl font-bold text-base hover:bg-gray-800 transition-all flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-emerald-400 text-lg"></i> Quick WhatsApp Ping
                     </a>
                 </div>
             </div>
-            <!-- Cartoon & High Graphic Image Banner Placement -->
+            <!-- Coding/Tech Style Graphic Showcase -->
             <div class="relative flex justify-center">
-                <div class="absolute -inset-1 bg-gradient-to-r from-pink-400 to-blue-400 rounded-full blur opacity-30 animate-pulse"></div>
-                <!-- Premium Unsplash Cartoon/Kids Learning Illustration Graphic vector format -->
-                <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=600" 
-                     alt="Kids Learning Cartoon Graphic Banner" 
-                     class="rounded-3xl shadow-2xl border-4 border-white transform rotate-2 hover:rotate-0 transition-transform duration-500 object-cover max-w-full h-80 sm:h-96 w-[450px]">
-            </div>
-        </div>
-    </section>
-
-    <!-- Professional Experience Dashboard Badge Section -->
-    <section id="about" class="py-16 bg-white relative">
-        <div class="container mx-auto px-4">
-            <div class="text-center max-w-3xl mx-auto mb-12">
-                <h2 class="text-3xl sm:text-4xl font-black text-gray-900">Why Top CBSE School Parents Trust Us?</h2>
-                <p class="text-gray-500 mt-3 font-semibold text-base sm:text-lg">Bringing the premium discipline of Central Schools directly to your home setup.</p>
-            </div>
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div class="p-8 bg-gradient-to-br from-blue-50 to-white rounded-3xl border-2 border-blue-100 shadow-sm hover:shadow-md transition-all group">
-                    <div class="w-14 h-14 bg-blue-500 text-white text-2xl rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform mb-6">
-                        <i class="fa-solid fa-award"></i>
+                <div class="w-full max-w-md bg-[#111827] rounded-2xl border border-gray-800 shadow-2xl p-6 font-mono text-xs sm:text-sm text-left relative overflow-hidden neon-glow-blue">
+                    <div class="flex space-x-2 border-b border-gray-800 pb-4 mb-4">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                        <span class="text-gray-500 ml-4">student_growth_algorithm.py</span>
                     </div>
-                    <h3 class="text-2xl font-extrabold text-gray-800 mb-2">7+ Years Experience</h3>
-                    <p class="text-gray-600 font-medium leading-relaxed">Deep mastery of child development paradigms, active math techniques, and primary language building phonics.</p>
-                </div>
-                <!-- Card 2 -->
-                <div class="p-8 bg-gradient-to-br from-pink-50 to-white rounded-3xl border-2 border-pink-100 shadow-sm hover:shadow-md transition-all group">
-                    <div class="w-14 h-14 bg-pink-500 text-white text-2xl rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform mb-6">
-                        <i class="fa-solid fa-school-flag"></i>
-                    </div>
-                    <h3 class="text-2xl font-extrabold text-gray-800 mb-2">Ex-KVS & JNV Framework</h3>
-                    <p class="text-gray-600 font-medium leading-relaxed">We implement the systematic curriculum structure of Kendriya Vidyalayas and Jawahar Navodaya Vidyalayas for unmatched foundational strength.</p>
-                </div>
-                <!-- Card 3 -->
-                <div class="p-8 bg-gradient-to-br from-yellow-50 to-white rounded-3xl border-2 border-yellow-100 shadow-sm hover:shadow-md transition-all group sm:col-span-2 lg:col-span-1">
-                    <div class="w-14 h-14 bg-yellow-500 text-white text-2xl rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform mb-6">
-                        <i class="fa-solid fa-brain"></i>
-                    </div>
-                    <h3 class="text-2xl font-extrabold text-gray-800 mb-2">Lucknow CBSE Alignment</h3>
-                    <p class="text-gray-600 font-medium leading-relaxed">Fully synchronized with continuous patterns of prestigious schools including CMS, KV, DPS, and Army Public Schools.</p>
+                    <p class="text-gray-500"># 7+ Years Professional Experience Framework</p>
+                    <p class="text-blue-400">import <span class="text-white">CBSE_Curriculum_Expertise</span></p>
+                    <p class="text-blue-400">import <span class="text-white">Child_Psychology_Framework</span></p>
+                    <br>
+                    <p class="text-purple-400">def <span class="text-yellow-400">initialize_batch</span>(student_class, mode):</p>
+                    <p class="text-gray-400 pl-4">instructor = <span class="text-green-400">"Ex-KVS / Ex-JNV Specialist"</span></p>
+                    <p class="text-gray-400 pl-4">experience = <span class="text-pink-400">"7+ Years Active Service"</span></p>
+                    <p class="text-gray-400 pl-4">location = <span class="text-green-400">"Lucknow Hub"</span></p>
+                    <p class="text-purple-400 pl-4">return <span class="text-gray-300">f"{instructor} will deploy Next-Level concepts"</span></p>
+                    <br>
+                    <p class="text-gray-500"># Output: Ready to scale academic metrics</p>
+                    <p class="text-emerald-400">>>> print(initialize_batch("UKG to Class 5", "Premium_Tuition"))</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Graphic Kids-friendly Batches Section -->
-    <section id="classes" class="py-16 bg-gradient-to-b from-white to-gray-50">
+    <!-- Elite Qualifications Dashboard Section -->
+    <section id="about" class="py-20 bg-[#090d16]">
         <div class="container mx-auto px-4">
-            <div class="text-center max-w-2xl mx-auto mb-16">
-                <h2 class="text-3xl sm:text-4xl font-black text-gray-900">Customized Class Programs</h2>
-                <p class="text-gray-500 mt-2 font-semibold">Every child is unique. We provide targeted curriculum tracks based on development phases.</p>
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Core Architectural Strengths</h2>
+                <p class="text-gray-500 mt-3 font-mono text-sm tracking-wide">// Why elite CBSE parents in Lucknow switch to our model</p>
             </div>
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Track 1 -->
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border-2 border-pink-200 hover:-translate-y-2 transition-all">
-                    <div class="bg-gradient-to-r from-pink-500 to-rose-500 p-6 text-white text-center relative">
-                        <div class="absolute right-4 top-4 text-4xl opacity-20"><i class="fa-solid fa-child-reaching"></i></div>
-                        <h3 class="font-black text-2xl">UKG</h3>
-                        <p class="text-xs font-bold tracking-widest uppercase mt-1 opacity-90">Early Foundation Track</p>
+                <!-- Strength 1 -->
+                <div class="glass-card p-8 rounded-2xl hover:border-blue-500/50 transition-all group duration-300">
+                    <div class="w-12 h-12 bg-blue-600/20 text-blue-400 text-xl rounded-xl flex items-center justify-center border border-blue-500/30 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-code-fork"></i>
                     </div>
-                    <div class="p-8 space-y-4">
-                        <div class="flex items-center gap-3 font-semibold text-gray-700"><i class="fa-solid fa-circle-check text-emerald-500"></i> Phonics & Sentence Reading</div>
-                        <div class="flex items-center gap-3 font-semibold text-gray-700"><i class="fa-solid fa-circle-check text-emerald-500"></i> Fun Playway Mental Math</div>
-                        <div class="flex items-center gap-3 font-semibold text-gray-700"><i class="fa-solid fa-circle-check text-emerald-500"></i> Hand-writing & Fine Motor Skills</div>
+                    <h3 class="text-xl font-bold mb-2 text-white">7+ Years Production Experience</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-medium">Deep data-driven understanding of fundamental core subjects, logical math shortcuts, and child cognitive growth structures.</p>
+                </div>
+                <!-- Strength 2 -->
+                <div class="glass-card p-8 rounded-2xl hover:border-purple-500/50 transition-all group duration-300">
+                    <div class="w-12 h-12 bg-purple-600/20 text-purple-400 text-xl rounded-xl flex items-center justify-center border border-purple-500/30 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Ex-KVS & JNV Pipelines</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-medium">Deploying the high-discipline framework, daily standard assignments, and deep systematic metrics used by elite central government schools.</p>
+                </div>
+                <!-- Strength 3 -->
+                <div class="glass-card p-8 rounded-2xl hover:border-pink-500/50 transition-all group duration-300">
+                    <div class="w-12 h-12 bg-pink-600/20 text-pink-400 text-xl rounded-xl flex items-center justify-center border border-pink-500/30 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-white">Local CBSE Node Alignment</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed font-medium">Precisely synchronized with the real-time exam patterns, grading metrics, and test methodologies of premium Lucknow institutes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advanced Tech-Themed Class Modules Section -->
+    <section id="classes" class="py-20 bg-[#0b0f19]">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Academic Execution Modules</h2>
+                <p class="text-gray-500 mt-2 font-mono text-sm tracking-wide">// Select target bracket for system configuration</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Module 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-gray-800 hover:shadow-2xl transition-all duration-300 group">
+                    <div class="bg-gradient-to-r from-blue-900 to-indigo-900 p-6 border-b border-gray-800">
+                        <div class="font-mono text-xs text-blue-400 tracking-widest mb-1">MODULE_01 //</div>
+                        <h3 class="font-black text-2xl text-white">UKG Foundation</h3>
+                    </div>
+                    <div class="p-6 space-y-4 font-medium text-sm text-gray-300">
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-chevron-right text-blue-400 text-xs"></i> Systematic Reading & Phonics Nodes</div>
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-chevron-right text-blue-400 text-xs"></i> Playway Mental Mathematics Logic</div>
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-chevron-right text-blue-400 text-xs"></i> Core Cognitive Writing Development</div>
                     </div>
                 </div>
-                <!-- Track 2 -->
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border-2 border-purple-200 hover:-translate-y-2 transition-all">
-                    <div class="bg-gradient-to-r from-purple-500 to-indigo-500 p-6 text-white text-center relative">
-                        <div class="absolute right-4 top-4 text-4xl opacity-20"><i class="fa-solid fa-book-open-reader"></i></div>
-                        <h3 class="font-black text-2xl">Class 1 - 2</h3>
-                        <p class="text-xs font-bold tracking-widest uppercase mt-1 opacity-90">Primary Growth Track</p>
+                <!-- Module 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-gray-800 hover:shadow-2xl transition-all duration-300 group">
+                    <div class="bg-gradient-to-r from-purple-900 to-indigo-900 p-6 border-b border-gray-800">
+                        <div class="font-mono text-xs text-purple-400 tracking-widest mb-1">MODULE_02 //</div>
+                        <h3 class="font-black text-2xl text-white">Class 1 - 2 Base</h3>
                     </div>
-                    <div class="p-8 space-y-4">
-                        <div class="flex items-center gap-3 font-semibold text-gray-700"><i class="fa-solid fa-circle-check text-emerald-500"></i> Addition/Sub World Problems</div>
-                        <div class="flex items-center gap-3 font-semibold text-gray-700"><i class="fa-solid fa-circle-check text-emerald-500"></i> Grammar & Creative Writing</div>
-                        <div class="flex items-center gap-3 font-semibold text-gray-700"><i class="fa-solid fa-circle-check text-emerald-500"></i> EVS Concepts & Smart Quizzes</div>
+                    <div class="p-6 space-y-4 font-medium text-sm text-gray-300">
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-chevron-right text-purple-400 text-xs"></i> Quantitative Math & Word Algorithms</div>
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-chevron-right text-purple-400 text-xs"></i> Grammar & Sentence Structuring</div>
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-chevron-right text-purple-400 text-xs"></i> Environmental Science Core Systems</div>
                     </div>
                 </div>
-                <!-- Track 3 -->
-                <div class="bg-white rounded-3xl shadow-xl overflow-hidden border-2 border-blue-200 hover:-translate-y-2 transition-all">
-                    <div class="bg-gradient-to-r from-blue-500 to-cyan-500 p-6 text-white text-center relative">
-                        <div class="absolute right-4 top-4 text-4xl opacity-20"><i class="fa-solid fa-graduation-cap"></i></div>
-                        <h3 class="font-black text-2xl">Class 3 - 5</h3>
-                        <p class="text-xs font-bold tracking-widest uppercase mt-1 opacity-90">Advanced Scholars Track</p>
+                <!-- Module 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-gray-800 hover:shadow-2xl transition-all duration-300 group">
+                    <div class="bg-gradient-to-r from-pink-900 to-purple-900 p-6 border-b border-gray-800">
+                        <div class="font-mono text-xs text-pink-400 tracking-widest mb-1">MODULE_03 //</div>
+                        <h3 class="font-black text-2xl text-white">Class 3 - 5 Elite</h3>
                     </div>
-                    <div class="p-8 space-y-4">
-                        <div class="flex items-center gap-3 font-semibold text-gray-700"><i class="fa-solid fa-circle-check text-emerald-500"></i> Advanced Math & Mental Logic</div>
-                        <div class="flex items-center gap-3 font-semibold text-gray-700"><i class="fa-solid fa-circle-check text-emerald-500"></i> Science, EVS & Social Baselines</div>
-                        <div class="flex items-center gap-3 font-semibold text-gray-700"><i class="fa-solid fa-circle-check text-emerald-500"></i> School Mock Exams Preparation</div>
+                    <div class="p-6 space-y-4 font-medium text-sm text-gray-300">
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-chevron-right text-pink-400 text-xs"></i> Advanced Math Problems & Reasoning</div>
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-chevron-right text-pink-400 text-xs"></i> Conceptual Science & Social Nodes</div>
+                        <div class="flex items-center gap-3"><i class="fa-solid fa-chevron-right text-pink-400 text-xs"></i> Advanced Mock Exam Code Patterns</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Lucknow Area / School Speciality Coverage Panel -->
-    <section id="why-us" class="py-16 bg-white">
+    <!-- Schools & High Tech Features Grid Panel -->
+    <section id="why-us" class="py-20 bg-[#090d16] border-t border-gray-900">
         <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
             <div class="space-y-6">
-                <h2 class="text-3xl sm:text-4xl font-black text-gray-900 leading-tight">Next Level Educational Ecosystem For Primary Students</h2>
-                <div class="space-y-4 font-medium text-gray-600">
-                    <div class="flex gap-4 items-start"><span class="bg-emerald-100 text-emerald-600 p-2 rounded-xl text-lg mt-1"><i class="fa-solid fa-laptop-code"></i></span><div><h4 class="font-black text-gray-900 text-lg">Interactive Tech Setup</h4><p class="text-sm">Digital tracking sheets, interactive workflows, and fun diagnostic tests to monitor performance metrics dynamically.</p></div></div>
-                    <div class="flex gap-4 items-start"><span class="bg-blue-100 text-blue-600 p-2 rounded-xl text-lg mt-1"><i class="fa-solid fa-paste"></i></span><div><h4 class="font-black text-gray-900 text-lg">Weekly Custom Worksheets</h4><p class="text-sm">No generic books! Custom tailored exercises targeted to plug the exact gaps discovered during sessions.</p></div></div>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">Interactive Analytical Ecosystem</h2>
+                <p class="text-gray-400 font-medium">We don't just teach from regular textbooks. We build custom-made worksheets and trace real-time student growth parameters to eliminate academic loops.</p>
+                <div class="space-y-4 font-mono text-xs sm:text-sm text-gray-400">
+                    <div class="flex items-center gap-3"><i class="fa-solid fa-microchip text-blue-500"></i> HIGH-TECH INTERACTIVE DIGITAL WORKSPACE LIVE</div>
+                    <div class="flex items-center gap-3"><i class="fa-solid fa-chart-line text-purple-500"></i> PROGRESS ANALYSIS DATA MATRIX DIRECTLY TO PARENTS</div>
                 </div>
             </div>
-            <!-- School Grid Map Display -->
-            <div class="bg-gradient-to-tr from-purple-900 to-indigo-800 p-8 rounded-3xl text-white shadow-2xl relative overflow-hidden">
-                <div class="absolute -right-10 -bottom-10 text-9xl text-white/5 font-black"><i class="fa-solid fa-city"></i></div>
-                <h3 class="text-2xl font-black text-center mb-2">Lucknow CBSE Schools Covered</h3>
-                <p class="text-indigo-200 text-center text-sm font-semibold mb-6">Aligned deeply with the specific question patterns and homework metrics of top local branches:</p>
-                <div class="grid grid-cols-2 gap-4 font-bold text-center text-sm">
-                    <div class="p-3 bg-white/10 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/20 transition-all">City Montessori School (CMS)</div>
-                    <div class="p-3 bg-white/10 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/20 transition-all">Kendriya Vidyalayas (KV)</div>
-                    <div class="p-3 bg-white/10 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/20 transition-all">Army Public Schools (APS)</div>
-                    <div class="p-3 bg-white/10 rounded-xl backdrop-blur-sm border border-white/10 hover:bg-white/20 transition-all">Delhi Public School / LPS</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Brand New Feature: Dynamic Parent FAQ Accordion -->
-    <section id="faq" class="py-16 bg-gray-50">
-        <div class="container mx-auto px-4 max-w-4xl">
-            <h2 class="text-3xl font-black text-center text-gray-900 mb-10">Frequently Asked Questions</h2>
-            <div class="space-y-4">
-                <div class="bg-white border rounded-2xl p-5 shadow-sm">
-                    <h3 class="font-extrabold text-lg text-gray-900 cursor-pointer flex justify-between items-center" onclick="toggleFaq(this)">
-                        What are your qualifications and coaching backgrounds?
-                        <i class="fa-solid fa-chevron-down text-gray-400"></i>
-                    </h3>
-                    <p class="text-gray-600 mt-3 hidden font-medium text-sm sm:text-base">I hold 7+ years of rigorous educational experience, including 2 years teaching at Jawahar Navodaya Vidyalaya (JNV) and 1 year at Kendriya Vidyalaya (KVS).</p>
-                </div>
-                <div class="bg-white border rounded-2xl p-5 shadow-sm">
-                    <h3 class="font-extrabold text-lg text-gray-900 cursor-pointer flex justify-between items-center" onclick="toggleFaq(this)">
-                        Do you provide physical home tuition or completely online model?
-                        <i class="fa-solid fa-chevron-down text-gray-400"></i>
-                    </h3>
-                    <p class="text-gray-600 mt-3 hidden font-medium text-sm sm:text-base">Both models are operational across targeted clusters in Lucknow! We offer high-fidelity interactive digital whiteboard sessions online as well as physically dedicated custom schedules.</p>
+            <!-- School Coverage Terminal Look -->
+            <div class="bg-gray-950 p-8 rounded-2xl border border-gray-800 relative overflow-hidden neon-glow-pink">
+                <h3 class="text-lg font-mono text-pink-400 mb-2">// CURRENTLY SERVING NODES (LUCKNOW)</h3>
+                <p class="text-gray-500 text-xs font-mono mb-6">Deep curriculum syncing for elite local institutional paths:</p>
+                <div class="grid grid-cols-2 gap-4 font-mono text-xs text-left">
+                    <div class="p-3 bg-[#111827] rounded-xl border border-gray-800 text-gray-300 hover:border-blue-500/50 transition-all">City Montessori School [CMS]</div>
+                    <div class="p-3 bg-[#111827] rounded-xl border border-gray-800 text-gray-300 hover:border-purple-500/50 transition-all">Kendriya Vidyalayas [KV]</div>
+                    <div class="p-3 bg-[#111827] rounded-xl border border-gray-800 text-gray-300 hover:border-pink-500/50 transition-all">Army Public Schools [APS]</div>
+                    <div class="p-3 bg-[#111827] rounded-xl border border-gray-800 text-gray-300 hover:border-yellow-500/50 transition-all">Delhi Public School / LPS</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Dynamic Premium Lead Capture Registration Box -->
-    <section id="contact" class="py-16 bg-gradient-to-b from-gray-50 to-blue-50 relative">
-        <div class="container mx-auto px-4 max-w-3xl relative z-10">
-            <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 border-4 border-blue-400 relative">
-                <!-- Cute Cartoon Badge Over Title -->
-                <div class="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-yellow-400 border-2 border-white px-6 py-1.5 rounded-full font-black text-xs sm:text-sm tracking-wider shadow-md text-gray-900 animate-bounce">
-                     ✨ 1 FREE DEMO CLASS OFFER ✨
+    <!-- Lead Capturing Interface Box (Tech/Developer Theme Form) -->
+    <section id="contact" class="py-20 bg-[#0b0f19] relative">
+        <div class="container mx-auto px-4 max-w-3xl">
+            <div class="bg-[#111827] rounded-2xl border border-blue-500/30 p-8 md:p-12 relative overflow-hidden neon-glow-blue">
+                <div class="absolute top-0 right-0 bg-blue-600/10 text-blue-400 font-mono text-[10px] uppercase tracking-widest px-4 py-1.5 rounded-bl-xl border-l border-b border-blue-500/20">
+                    SLOT_RESERVATION_v2.0
                 </div>
-                <div class="text-center mt-4 mb-8">
-                    <h2 class="text-3xl font-black text-gray-900">Request A Call Back</h2>
-                    <p class="text-gray-500 mt-1 font-semibold text-sm">Let's discuss and schedule a diagnostics performance session for your child.</p>
+                <div class="text-center mb-10">
+                    <h2 class="text-3xl font-mono tracking-tight text-white">&lt;<span class="text-blue-400">Initialize_Free_Demo</span>&gt;</h2>
+                    <p class="text-gray-500 mt-2 text-sm font-medium">Verify your parameters below to execute a callback sequence.</p>
                 </div>
-                <form id="leadForm" class="space-y-6">
+                <form id="leadForm" class="space-y-6 font-mono text-sm">
                     <div class="grid md:grid-cols-2 gap-6">
-                        <div><label class="block text-xs font-black uppercase text-gray-500 mb-2 tracking-wide">Parent's Name</label><input type="text" required class="w-full px-4 py-3.5 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-blue-500 transition-colors font-semibold" placeholder="Enter parent full name"></div>
-                        <div><label class="block text-xs font-black uppercase text-gray-500 mb-2 tracking-wide">Contact Number</label><input type="tel" required class="w-full px-4 py-3.5 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-blue-500 transition-colors font-semibold" placeholder="WhatsApp Number preferred"></div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-500 mb-2">Parent Name_</label>
+                            <input type="text" required class="w-full bg-gray-950 px-4 py-3.5 border border-gray-800 rounded-xl focus:outline-none focus:border-blue-500 transition-colors font-sans text-gray-200" placeholder="Enter full name">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-500 mb-2">WhatsApp Contact_</label>
+                            <input type="tel" required class="w-full bg-gray-950 px-4 py-3.5 border border-gray-800 rounded-xl focus:outline-none focus:border-blue-500 transition-colors font-sans text-gray-200" placeholder="Mobile number">
+                        </div>
                     </div>
                     <div class="grid md:grid-cols-2 gap-6">
-                        <div><label class="block text-xs font-black uppercase text-gray-500 mb-2 tracking-wide">Student's Current Class</label><select class="w-full px-4 py-3.5 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-blue-500 font-semibold text-gray-600"><option>UKG</option><option>Class 1</option><option>Class 2</option><option>Class 3</option><option>Class 4</option><option>Class 5</option></select></div>
-                        <div><label class="block text-xs font-black uppercase text-gray-500 mb-2 tracking-wide">Preferred Mode</label><select class="w-full px-4 py-3.5 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-blue-500 font-semibold text-gray-600"><option>Home Tuition (Physical Lucknow)</option><option>Online Live Interactive Sessions</option></select></div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-500 mb-2">Student Bracket_</label>
+                            <select class="w-full bg-gray-950 px-4 py-3.5 border border-gray-800 rounded-xl focus:outline-none focus:border-blue-500 text-gray-400 font-sans">
+                                <option>UKG</option>
+                                <option>Class 1</option>
+                                <option>Class 2</option>
+                                <option>Class 3</option>
+                                <option>Class 4</option>
+                                <option>Class 5</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-500 mb-2">Execution Mode_</label>
+                            <select class="w-full bg-gray-950 px-4 py-3.5 border border-gray-800 rounded-xl focus:outline-none focus:border-blue-500 text-gray-400 font-sans">
+                                <option>Physical Home Tuition (Lucknow)</option>
+                                <option>Live Interactive Online Sessions</option>
+                            </select>
+                        </div>
                     </div>
-                    <div><label class="block text-xs font-black uppercase text-gray-500 mb-2 tracking-wide">School Name (Lucknow)</label><input type="text" required class="w-full px-4 py-3.5 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-blue-500 transition-colors font-semibold" placeholder="e.g. CMS Aliganj, KV Memaura, DPS Eldeco"></div>
-                    <button type="submit" class="w-full bg-gradient-to-r from-pink-500 to-rose-600 text-white font-black py-4 rounded-xl shadow-lg hover:opacity-95 hover:scale-[1.01] transition-all tracking-wide uppercase text-lg">
-                        Confirm & Request Callback <i class="fa-solid fa-paper-plane ml-1"></i>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-gray-500 mb-2">Target School Node_</label>
+                        <input type="text" required class="w-full bg-gray-950 px-4 py-3.5 border border-gray-800 rounded-xl focus:outline-none focus:border-blue-500 transition-colors font-sans text-gray-200" placeholder="e.g. CMS, KV, DPS">
+                    </div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 text-white font-bold py-4 rounded-xl shadow-lg hover:opacity-95 hover:scale-[1.01] transition-all tracking-widest uppercase font-mono border border-blue-400/30">
+                        Execute Request_
                     </button>
                 </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer Area -->
-    <footer class="bg-gray-900 text-gray-400 py-12 border-t-4 border-pink-500">
+    <!-- Footer System -->
+    <footer class="bg-[#090d16] text-gray-500 py-12 border-t border-gray-900 font-mono text-xs">
         <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="text-white font-black text-2xl">Bright<span class="text-pink-500">Minds</span></div>
-            <p class="text-sm font-semibold text-center md:text-left">&copy; 2026 BrightMinds Tuitions. Empowering Foundations Across Top Schools In Lucknow.</p>
-            <div class="flex space-x-4 text-xl">
+            <div class="text-white font-black text-lg">Bright<span class="text-blue-400">Minds.io</span></div>
+            <p class="text-center md:text-left">&copy; 2026 BrightMinds Systems. Compilation Successful. Running elite nodes in Lucknow.</p>
+            <div class="flex space-x-6 text-base">
                 <a href="#" class="hover:text-emerald-400 transition-colors"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="#" class="hover:text-red-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
+                <a href="#" class="hover:text-blue-400 transition-colors"><i class="fa-solid fa-envelope"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- Interactive JS Functionality Module -->
+    <!-- JS Logic Core Deployment -->
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
@@ -288,17 +304,9 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        function toggleFaq(el) {
-            const content = el.nextElementSibling;
-            const icon = el.querySelector('i');
-            content.classList.toggle('hidden');
-            icon.classList.toggle('fa-chevron-down');
-            icon.classList.toggle('fa-chevron-up');
-        }
-
         document.getElementById('leadForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Congratulations! Your data has been securely verified. Our Executive Team will contact you within 2-4 hours to fix the Demo slot.');
+            alert('SYSTEM MESSAGE: Data transmission successful. Your free evaluation demo slot has been compiled securely. We will initiate contact sequence within 2 hours.');
             this.reset();
         });
     </script>
