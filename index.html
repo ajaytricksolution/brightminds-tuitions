@@ -3,176 +3,507 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Excellent Home Tutorials | Best Home & Online Tuitions</title>
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Apex Scholar Institute | Premium Home Tuitions</title>
     <style>
-        html { scroll-behavior: smooth; }
+        /* 100% Offline Standalone UI - High Vibrancy Color Theme */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: #f0f4f8;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+        /* Top High-Vibrancy Alert Ribbon */
+        .top-banner {
+            background: linear-gradient(90deg, #ec4899 0%, #8b5cf6 50%, #3b82f6 100%);
+            color: #ffffff;
+            text-align: center;
+            padding: 12px;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        /* Header Navigation Hub with Integrated Logo */
+        header {
+            background-color: #ffffff;
+            border-bottom: 2px solid #e2e8f0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        /* Crafted Brand Logo */
+        .brand-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        .logo-icon {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 900;
+            font-size: 22px;
+            box-shadow: 0 4px 10px rgba(37,99,235,0.3);
+        }
+        .logo-text {
+            font-size: 26px;
+            font-weight: 800;
+            color: #0f172a;
+            letter-spacing: -0.5px;
+        }
+        .logo-text span {
+            color: #2563eb;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #475569;
+            font-weight: 700;
+            font-size: 15px;
+            margin-left: 25px;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #2563eb;
+        }
+        /* Super Colorful Hero Presenter */
+        .hero-banner {
+            background: linear-gradient(135deg, #1e1b4b 0%, #311042 50%, #1e3a8a 100%);
+            color: #ffffff;
+            padding: 90px 20px;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 5px solid #2563eb;
+        }
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 50px;
+        }
+        .hero-content {
+            flex: 1.2;
+            min-width: 320px;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: linear-gradient(90deg, #f43f5e 0%, #e11d48 100%);
+            color: white;
+            padding: 8px 18px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 800;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            box-shadow: 0 4px 12px rgba(244,63,94,0.4);
+        }
+        .hero-content h1 {
+            font-size: 48px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        .hero-content h1 span {
+            color: #60a5fa;
+            background: linear-gradient(90deg, #38bdf8, #f472b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-content p {
+            font-size: 18px;
+            color: #cbd5e1;
+            margin-bottom: 35px;
+            max-width: 600px;
+        }
+        /* Interactive Glowing Action Buttons */
+        .action-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+            color: white;
+            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 15px;
+            box-shadow: 0 8px 20px rgba(34,197,94,0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-right: 15px;
+        }
+        .action-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 25px rgba(34,197,94,0.5);
+        }
+        /* Instructor Verified Profile Card Dashboard */
+        .hero-profile {
+            flex: 0.8;
+            min-width: 320px;
+            display: flex;
+            justify-content: center;
+        }
+        .faculty-card {
+            background-color: #ffffff;
+            border-radius: 24px;
+            padding: 35px;
+            width: 100%;
+            max-width: 420px;
+            color: #1e293b;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+            border: 3px solid #3b82f6;
+            position: relative;
+        }
+        .card-badge {
+            position: absolute;
+            top: -15px;
+            right: 25px;
+            background: linear-gradient(90deg, #eab308 0%, #ca8a04 100%);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 800;
+            box-shadow: 0 4px 10px rgba(234,179,8,0.3);
+        }
+        .faculty-avatar {
+            width: 70px;
+            height: 70px;
+            background: #eff6ff;
+            border: 2px solid #3b82f6;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+        .faculty-name {
+            font-size: 24px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 5px;
+        }
+        .faculty-tag {
+            display: inline-block;
+            background-color: #dbeafe;
+            color: #1e40af;
+            padding: 4px 12px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .info-row {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .info-label {
+            font-size: 11px;
+            font-weight: 800;
+            color: #64748b;
+            text-transform: uppercase;
+            width: 90px;
+        }
+        .info-val {
+            font-size: 14px;
+            font-weight: 700;
+            color: #1e293b;
+        }
+        /* Structured Segment Blocks */
+        .details-section {
+            padding: 80px 20px;
+            background-color: #ffffff;
+        }
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 50px auto;
+        }
+        .section-header h2 {
+            font-size: 36px;
+            color: #0f172a;
+            font-weight: 800;
+            margin-bottom: 15px;
+        }
+        .section-header p {
+            color: #64748b;
+            font-size: 16px;
+        }
+        .grid-layout {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-cols: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        .meta-box {
+            background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+            padding: 35px;
+            border-radius: 20px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.02);
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .meta-box:hover {
+            transform: translateY(-5px);
+            border-color: #3b82f6;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+        .meta-box h3 {
+            font-size: 20px;
+            color: #0f172a;
+            margin-bottom: 15px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .meta-box p {
+            font-size: 15px;
+            color: #475569;
+        }
+        /* High-Converting Form Console */
+        .portal-section {
+            padding: 80px 20px;
+            background: linear-gradient(135deg, #cbd5e1 0%, #94a3b8 100%);
+        }
+        .form-card {
+            background-color: #ffffff;
+            max-width: 580px;
+            margin: 0 auto;
+            padding: 45px;
+            border-radius: 24px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15);
+        }
+        .form-title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+        .form-title h2 {
+            font-size: 26px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+        .form-title p {
+            color: #64748b;
+            font-size: 14px;
+        }
+        .input-group {
+            margin-bottom: 22px;
+        }
+        .input-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 700;
+            color: #334155;
+            margin-bottom: 8px;
+        }
+        .input-group input, .input-group select {
+            width: 100%;
+            padding: 14px 18px;
+            border: 2px solid #cbd5e1;
+            background-color: #f8fafc;
+            border-radius: 12px;
+            font-size: 15px;
+            color: #1e293b;
+            outline: none;
+            transition: border-color 0.2s, background-color 0.2s;
+        }
+        .input-group input:focus, .input-group select:focus {
+            border-color: #2563eb;
+            background-color: #ffffff;
+        }
+        .submit-trigger {
+            width: 100%;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: white;
+            border: none;
+            padding: 16px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 15px;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 6px 20px rgba(37,99,235,0.3);
+            transition: opacity 0.2s;
+        }
+        .submit-trigger:hover {
+            opacity: 0.95;
+        }
+        /* Footer Row */
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            padding: 40px 20px;
+            font-size: 14px;
+            text-align: center;
+            border-top: 2px solid #1e293b;
+        }
+        .footer-wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 font-sans">
+<body>
 
-    <!-- Top Contact Bar -->
-    <div class="bg-blue-600 text-white text-center py-2 px-4 text-xs font-medium">
-        <i class="fa-solid fa-phone mr-1"></i> Call Us Today for a Free Demo Class!
+    <div class="top-banner">
+        🔥 Special Batches Open for KG, UKG & Class 1 to 5. Book Your Free Slots Instantly!
     </div>
 
-    <!-- Header / Navbar -->
-    <header class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
-            <div class="text-xl font-bold text-blue-600 flex items-center">
-                <i class="fa-solid fa-book-open-reader mr-2"></i> Excellent<span class="text-gray-700">Tutorials</span>
-            </div>
-            <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600">
-                <a href="#home" class="hover:text-blue-600 transition-colors">Home</a>
-                <a href="#features" class="hover:text-blue-600 transition-colors">Why Us</a>
-                <a href="#courses" class="hover:text-blue-600 transition-colors">Our Classes</a>
-                <a href="#contact" class="hover:text-blue-600 transition-colors">Contact</a>
-            </nav>
-            <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white text-xs px-4 py-2.5 rounded-lg font-bold uppercase transition-all shadow-md">
-                Book Free Demo
+    <header>
+        <div class="nav-container">
+            <a href="#" class="brand-logo">
+                <div class="logo-icon">A</div>
+                <div class="logo-text">Apex<span>Scholar</span></div>
             </a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#faculty">Teacher Profile</a>
+                <a href="#booking">Book Trial</a>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="bg-gradient-to-r from-blue-50 to-indigo-50 py-16 md:py-24 border-b border-gray-100">
-        <div class="container mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
-            <div class="space-y-6 text-center md:text-left">
-                <span class="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Top Rated Tutorials</span>
-                <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-                    Get the Best Home & Online Tutors For Your Child
-                </h1>
-                <p class="text-gray-600 text-base md:text-lg">
-                    We provide personalized, result-oriented home tuitions from UKG to Class 10. Dedicated tutors tailored to match your child's learning speed.
-                </p>
-                <div class="flex flex-wrap gap-4 justify-center md:justify-start">
-                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-bold px-6 py-3 rounded-xl shadow-lg transition-all">
-                        Find a Tutor Now
-                    </a>
-                    <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-xl shadow-lg flex items-center gap-2 transition-all">
-                        <i class="fa-brands fa-whatsapp text-lg"></i> Chat on WhatsApp
-                    </a>
+    <section class="hero-banner" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">Verified Home Tuition Network</div>
+                <h1>Premium One-on-One Learning for <span>KG, UKG & Classes 1 to 5</span></h1>
+                <p>Give your child the unfair advantage of absolute conceptual clarity. We design specialized learning roadmaps right at your doorstep.</p>
+                <div>
+                    <a href="#booking" class="action-btn">Book Free Demo Session</a>
                 </div>
             </div>
-            <!-- Visual Graphic (Clean Design representation) -->
-            <div class="flex justify-center">
-                <div class="bg-white p-8 rounded-2xl shadow-xl border border-gray-100 max-w-sm text-center space-y-4">
-                    <div class="w-16 h-16 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl mx-auto"><i class="fa-solid fa-user-tie"></i></div>
-                    <h3 class="text-lg font-bold text-gray-800">100+ Verified Tutors</h3>
-                    <p class="text-gray-500 text-xs">All our educators are background-checked and expert subject specialists.</p>
-                    <div class="border-t pt-4 grid grid-cols-2 gap-2 text-xs font-semibold text-gray-600">
-                        <div class="bg-gray-50 p-2 rounded-lg">CBSE / ICSE</div>
-                        <div class="bg-gray-50 p-2 rounded-lg">All Subjects</div>
+            
+            <div class="hero-profile" id="faculty">
+                <div class="faculty-card">
+                    <div class="card-badge">DIRECTOR & HEAD MENTOR</div>
+                    <div class="faculty-avatar">👨‍🏫</div>
+                    <div class="faculty-name">Ajay Kumar Maurya</div>
+                    <div class="faculty-tag">Expert Home Tutor</div>
+                    
+                    <div class="info-row">
+                        <div class="info-label">Eligibility</div>
+                        <div class="info-val">BCA, MCA, B.Ed</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Experience</div>
+                        <div class="info-val">7 Years in Professional Teaching</div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-label">Call / Core</div>
+                        <div class="info-val" style="color: #2563eb; font-weight: 800;">+91 9935833344</div>
+                    </div>
+                    <div class="info-row" style="border-bottom: none; margin-bottom: 0; padding-bottom: 0;">
+                        <div class="info-label">Email Hub</div>
+                        <div class="info-val" style="font-size:13px; font-weight:600; color:#475569;">jnvpatna52@gmail.com</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Why Choose Us -->
-    <section id="features" class="py-16 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="text-center max-w-xl mx-auto mb-12">
-                <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900">Why Parents Trust Us</h2>
-                <p class="text-gray-500 text-sm mt-2">We focus on building strong conceptual foundations for every student.</p>
+    <section class="details-section">
+        <div class="section-header">
+            <h2>Our Primary Academic Pillars</h2>
+            <p>Every child has a different processing dynamic. Our method ensures zero stress and complete topic command from foundational years.</p>
+        </div>
+        <div class="grid-layout">
+            <div class="meta-box">
+                <h3>📖 Early Childhood Care</h3>
+                <p>Specialized interactive lessons for KG & UKG to improve alphabet recognition, phonics, basic counting, and cognitive skills.</p>
             </div>
-            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100">
-                    <div class="text-blue-600 text-xl mb-3"><i class="fa-solid fa-chalkboard-user"></i></div>
-                    <h3 class="text-lg font-bold mb-2">1-on-1 Personal Attention</h3>
-                    <p class="text-gray-600 text-sm">Every child learns at their own pace. Our tutors focus entirely on your child's weak areas.</p>
-                </div>
-                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100">
-                    <div class="text-blue-600 text-xl mb-3"><i class="fa-solid fa-square-poll-horizontal"></i></div>
-                    <h3 class="text-lg font-bold mb-2">Weekly Progress Reports</h3>
-                    <p class="text-gray-600 text-sm">We take regular weekend tests and share detailed performance analytics with parents.</p>
-                </div>
-                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100">
-                    <div class="text-blue-600 text-xl mb-3"><i class="fa-solid fa-file-invoice"></i></div>
-                    <h3 class="text-lg font-bold mb-2">Customized Worksheets</h3>
-                    <p class="text-gray-600 text-sm">We provide tailored homework sheets and revision matrices to help during final exams.</p>
-                </div>
+            <div class="meta-box">
+                <h3>📊 Primary Schooling Core</h3>
+                <p>Advanced subject management custom-built for Class 1 to 5 to secure fundamental logic in Mathematics, EVS, and Languages.</p>
+            </div>
+            <div class="meta-box">
+                <h3>📝 Adaptive Worksheets</h3>
+                <p>No dull text cramming. Mental conceptual problems mapped to keep students sharp, agile, and curious.</p>
             </div>
         </div>
     </section>
 
-    <!-- Classes Covered -->
-    <section id="courses" class="py-16 bg-gray-50 border-t border-b border-gray-100">
-        <div class="container mx-auto px-4">
-            <div class="text-center max-w-xl mx-auto mb-12">
-                <h2 class="text-2xl md:text-3xl font-extrabold text-gray-900">Classes We Teach</h2>
-                <p class="text-gray-500 text-sm mt-2">Select the right bracket for your children.</p>
+    <section class="portal-section" id="booking">
+        <div class="form-card">
+            <div class="form-title">
+                <h2>Secure Your Slot with Ajay Sir</h2>
+                <p>Fill out the primary parameters. Our administrative desk will call you back within 2 hours.</p>
             </div>
-            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200/60">
-                    <h3 class="text-lg font-bold text-blue-600 mb-2">Primary (UKG - Class 5)</h3>
-                    <p class="text-gray-600 text-xs leading-relaxed">Focus on reading phonics, foundational mathematics, and basic analytical writing controls.</p>
+            <form id="tuitionInquiryForm">
+                <div class="input-group">
+                    <label>Parent's Full Name</label>
+                    <input type="text" required placeholder="e.g. Ramesh Chandra">
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200/60">
-                    <h3 class="text-lg font-bold text-indigo-600 mb-2">Middle School (Class 6 - 8)</h3>
-                    <p class="text-gray-600 text-xs leading-relaxed">Deep subject-wise analysis for Science, Mathematics, English Grammar, and Social Studies concepts.</p>
+                <div class="input-group">
+                    <label>Active Contact Number</label>
+                    <input type="tel" required placeholder="10-Digit Mobile Number">
                 </div>
-                <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-200/60">
-                    <h3 class="text-lg font-bold text-purple-600 mb-2">High School (Class 9 - 10)</h3>
-                    <p class="text-gray-600 text-xs leading-relaxed">Rigorous preparation for Board Patterns, extensive mock tests, and systematic scoring frameworks.</p>
+                <div class="input-group">
+                    <label>Student's Current Class Bracket</label>
+                    <select>
+                        <option>KG (Kindergarten)</option>
+                        <option>UKG (Upper Kindergarten)</option>
+                        <option>Class 1</option>
+                        <option>Class 2</option>
+                        <option>Class 3</option>
+                        <option>Class 4</option>
+                        <option>Class 5</option>
+                    </select>
                 </div>
-            </div>
+                <div class="input-group">
+                    <label>Residential Location / Landmark</label>
+                    <input type="text" required placeholder="e.g. Aliganj / Gomti Nagar, Lucknow">
+                </div>
+                <button type="submit" class="submit-trigger">Register Allocation Request</button>
+            </form>
         </div>
     </section>
 
-    <!-- Parent Inquiry Form -->
-    <section id="contact" class="py-16 bg-white">
-        <div class="container mx-auto px-4 max-w-md">
-            <div class="bg-white rounded-2xl p-8 shadow-xl border border-gray-100">
-                <h2 class="text-2xl font-bold text-gray-900 text-center mb-2">Request a Home Tutor</h2>
-                <p class="text-gray-500 text-xs text-center mb-6">Fill in the details below, and we will arrange a free trial class within 24 hours.</p>
-                
-                <form id="tuitionForm" class="space-y-4 text-sm">
-                    <div>
-                        <label class="block text-gray-600 font-semibold mb-1">Parent's Name</label>
-                        <input type="text" required class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-2.5 focus:outline-none focus:border-blue-500" placeholder="Enter full name">
-                    </div>
-                    <div>
-                        <label class="block text-gray-600 font-semibold mb-1">Mobile / WhatsApp Number</label>
-                        <input type="tel" required class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-2.5 focus:outline-none focus:border-blue-500" placeholder="Enter contact number">
-                    </div>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-gray-600 font-semibold mb-1">Student's Class</label>
-                            <input type="text" required class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-2.5 focus:outline-none focus:border-blue-500" placeholder="e.g., Class 5">
-                        </div>
-                        <div>
-                            <label class="block text-gray-600 font-semibold mb-1">Tuition Mode</label>
-                            <select class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-2.5 focus:outline-none focus:border-blue-500 text-gray-600">
-                                <option>Home Tuition</option>
-                                <option>Online Tuition</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div>
-                        <label class="block text-gray-600 font-semibold mb-1">Your Location / Area</label>
-                        <input type="text" required class="w-full bg-gray-50 border border-gray-200 rounded-lg px-4 py-2.5 focus:outline-none focus:border-blue-500" placeholder="e.g., Gomti Nagar, Lucknow">
-                    </div>
-                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg shadow-md transition-all uppercase tracking-wide text-xs">
-                        Submit Application
-                    </button>
-                </form>
-            </div>
+    <footer>
+        <div class="footer-wrap">
+            <strong style="color: white; font-size: 18px;">ApexScholar Network</strong>
+            <p>&copy; 2026 ApexScholar Home Tuitions. All Rights Reserved.</p>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-8 text-center text-xs">
-        <p>&copy; 2026 Excellent Home Tutorials. All Rights Reserved. Created by Your Agency.</p>
     </footer>
 
     <script>
-        document.getElementById('tuitionForm').addEventListener('submit', function(e) {
+        document.getElementById('tuitionInquiryForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you! Your request has been sent. We will get back to you shortly to schedule your free demo class.');
+            alert('SUCCESS: Your admission parameters have been logged. Academic Head Ajay Kumar Maurya Sir will connect with you shortly.');
             this.reset();
         });
     </script>
